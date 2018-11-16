@@ -1,0 +1,132 @@
+### 	:::::::::::::::::::::: IMPORTANT INFORMATION :::::::::::::::::::::::::::::::	#
+#
+#	consult the following website (and the corresponding paper) for
+# 	more detailed information about the individual parameters and
+#	their meanings:
+#
+#	http://www.fhnw.ch/wirtschaft/iwi/gmt
+#
+### 	:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: 	#
+
+
+
+#########################################################################################
+# 	source and target graph set, pathes to the graph and result folder		#
+#########################################################################################
+source=./data/temp/temp.xml
+target=./data/temp/temp.xml
+path=./data/temp/
+result=./result/temp
+
+
+#########################################################################################
+# 	graph matching paradigm (possible choices are: AStar, Beam, Hungarian, VJ)	#
+# 	if "Beam" is chosen, maximum number of open paths s has to be defined		#
+#########################################################################################
+matching=VJ
+adj=best
+
+#########################################################################################
+# 	cost for node/edge deletions/insertions (both cost values have to be > 0)	#
+#########################################################################################
+node=1
+edge=1
+
+
+#########################################################################################
+# 	number of node attributes and the individual names of these attributes		#
+#########################################################################################
+numOfNodeAttr=1
+nodeAttr0=type
+
+
+#########################################################################################
+# 	cost function type per individual node attribute 				#
+#	(possible choices are: squared, absolute, discrete, sed)			#
+# 	if cost-function=discrete for node attribute i: nodeCostMui and nodeCostNui	#
+#	(non-negative real values) have to be additionally defined 			#
+#########################################################################################
+nodeCostType0=discrete
+nodeCostMu0=0
+nodeCostNu0=1
+
+#########################################################################################
+# 	weighting parameters per individual node attribute 				#
+#	(min=0, max=1.0; default = 1.0)							#
+#########################################################################################
+nodeAttr0Importance=1.0
+
+
+#########################################################################################
+# 	individual node costs are added (multiplyNodeCosts=0) or 			#
+#	multiplied (multiplyNodeCosts=1)						#
+#	p-th root is extracted from the combined node cost 				#
+#########################################################################################
+multiplyNodeCosts=0
+pNode=1
+
+
+#########################################################################################
+# 	edges are directed (=0) or undirected (=1)					#
+#########################################################################################
+undirected=1
+
+
+#########################################################################################
+# 	number of edge attributes and the individual names of these attributes		#
+#########################################################################################
+numOfEdgeAttr=1
+edgeAttr0=valence
+
+
+#########################################################################################
+# 	cost function type per individual edge attribute 				#
+#	(possible choices are: squared, absolute, discrete, sed)			#
+# 	if cost-function=discrete for edge attribute i: nodeCostMui and nodeCostNui	#
+#	(non-negative real values) have to be additionally defined 			#
+#########################################################################################
+edgeCostType0=discrete
+edgeCostMu0=0
+edgeCostNu0=1
+
+
+#########################################################################################
+# 	weighting parameters per individual edge attribute 				#
+#	(min=0, max=1.0; default = 1.0)							#
+#########################################################################################
+edgeAttr0Importance=1.0
+
+
+#########################################################################################
+# 	individual edge costs are added (multiplyEdgeCosts=0) or 			#
+#	multiplied (multiplyEdgeCosts=1)						#
+#	p-th root is extracted from the combined edge cost 				#
+#########################################################################################
+multiplyEdgeCosts=0
+pEdge=1
+
+
+#########################################################################################
+# 	alpha weights the node and edge costs:						#
+#	alpha * nodeCost; (1-alpha) * edgeCost
+#########################################################################################
+alpha=0.5
+
+
+#########################################################################################
+# 	logging options on the console							#
+#########################################################################################
+outputGraphs=0
+outputEditpath=0
+outputCostMatrix=0
+outputMatching=0
+
+
+#########################################################################################
+# 	build similarities from distances or not (possible choices are 0,1,2,3,4)	#
+#########################################################################################
+simKernel=0
+
+
+
+

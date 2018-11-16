@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<GraphCollection>
+<graphs>
+<print file="g1.gxl"/>
+<print file="g2.gxl"/>
+</graphs>
+</GraphCollection>
