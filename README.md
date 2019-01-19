@@ -14,7 +14,8 @@ and extract under `data/`:
 
 Get the pickle files (`/save`) from https://drive.google.com/drive/folders/1Eusvi4_iOKM0AsO1LhxQFkY62kDEtuMq?usp=sharing
 
-Get the paper files (`/paper`) from https://drive.google.com/drive/folders/1eygwZP70qt-2ERrXnpLQ5nDz37nnVKHO?usp=sharing
+Get the result files (`/result`)  https://drive.google.com/drive/folders/1UXEGozaThjjuC-hnt4C7jn06L6I2Ra1v?usp=sharing
+
 
 ## Dependencies
 
