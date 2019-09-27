@@ -50,3 +50,7 @@ Install the following the tools and packages:
 * If you see red lines under `import`, mark `src` and `model/Siamese` as `Source Root`,
 so that PyCharm can find those files.
 * Mark `src/Siamese/logs` and `src/Siamese/exp` as `Excluded`, so that PyCharm won't spend time inspecting those logs.
+
+## Run
+
+The idea of creating `config.py` is to avoid typing in command line arguments. Instead, we can modify a few parameters in `config.py` and let the file handle the setting of the rest parameters via a bunch of `if` `else` statements. Then we can simply run `python main.py` without the following `--xxx`s. 
